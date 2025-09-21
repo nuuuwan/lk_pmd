@@ -1,12 +1,12 @@
 # 📢#SriLanka 🇱🇰 Pmd Press Releases `Dataset`
 
-![LastUpdated](https://img.shields.io/badge/last_updated-2025--09--21_16:05:04-green)
+![LastUpdated](https://img.shields.io/badge/last_updated-2025--09--21_16:12:12-green)
 
 [https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases)
 
 A Sri Lanka Presidential Media Division press release shares official updates on national decisions, policies, or events. It’s vital as the authoritative source ensuring transparency and public awareness.
 
-- [**1,879** documents](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases) (**113.7 MB**), from **2024-10-25** to **2025-09-02**, scraped from **[https://pmd.gov.lk](https://pmd.gov.lk)**
+- [**2,160** documents](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases) (**118.0 MB**), from **2024-09-23** to **2025-09-02**, scraped from **[https://pmd.gov.lk](https://pmd.gov.lk)**
 
 - In **JSON**, **TXT** & **🤗 Hugging Face**
 
