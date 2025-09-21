@@ -70,9 +70,8 @@ class PMDPressRelease(AbstractDoc):
         assert (
             len(date_str) == 10 and date_str[4] == '-' and date_str[7] == '-'
         ), date_str
-        hash_description = Hash.md5(description)[:6]
-        num = f'{date_str}-{hash_description}'
-
+        num = Hash.md5(description)[:6]
+    
         if num in num_set:
             return None
 
