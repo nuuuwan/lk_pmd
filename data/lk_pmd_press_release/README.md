@@ -1,12 +1,12 @@
 # 📢#SriLanka 🇱🇰 Pmd Press Release `Dataset`
 
-![LastUpdated](https://img.shields.io/badge/last_updated-2025--09--21_14:36:05-green)
+![LastUpdated](https://img.shields.io/badge/last_updated-2025--09--21_14:54:28-green)
 
 [https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_release](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_release)
 
 A Sri Lanka Presidential Media Division press release shares official updates on national decisions, policies, or events. It’s vital as the authoritative source ensuring transparency and public awareness.
 
-- [**745** documents](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_release) (**7.7 MB**), from **2024-09-23** to **2025-09-02**, scraped from **[https://pmd.gov.lk/ta/%e0%ae%9a%e0%af%86%e0%ae%af%e0%af%8d%e0%ae%a4%e0%ae%bf/%e0%ae%b5%e0%ae%9f%e0%ae%95%e0%af%8d%e0%ae%95%e0%ae%bf%e0%ae%b2%e0%af%8d-%e0%ae%a4%e0%af%86%e0%ae%99%e0%af%8d%e0%ae%95%e0%af%81-%e0%ae%ae%e0%af%81%e0%ae%95%e0%af%8d%e0%ae%95%e0%af%8b%e0%ae%a3%e0%ae%a4/](https://pmd.gov.lk/ta/%e0%ae%9a%e0%af%86%e0%ae%af%e0%af%8d%e0%ae%a4%e0%ae%bf/%e0%ae%b5%e0%ae%9f%e0%ae%95%e0%af%8d%e0%ae%95%e0%ae%bf%e0%ae%b2%e0%af%8d-%e0%ae%a4%e0%af%86%e0%ae%99%e0%af%8d%e0%ae%95%e0%af%81-%e0%ae%ae%e0%af%81%e0%ae%95%e0%af%8d%e0%ae%95%e0%af%8b%e0%ae%a3%e0%ae%a4/)**
+- [**2,188** documents](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_release) (**56.0 MB**), from **2024-09-23** to **2025-09-02**, scraped from **[https://pmd.gov.lk/ta/%e0%ae%9a%e0%af%86%e0%ae%af%e0%af%8d%e0%ae%a4%e0%ae%bf/%e0%ae%b5%e0%ae%9f%e0%ae%95%e0%af%8d%e0%ae%95%e0%ae%bf%e0%ae%b2%e0%af%8d-%e0%ae%a4%e0%af%86%e0%ae%99%e0%af%8d%e0%ae%95%e0%af%81-%e0%ae%ae%e0%af%81%e0%ae%95%e0%af%8d%e0%ae%95%e0%af%8b%e0%ae%a3%e0%ae%a4/](https://pmd.gov.lk/ta/%e0%ae%9a%e0%af%86%e0%ae%af%e0%af%8d%e0%ae%a4%e0%ae%bf/%e0%ae%b5%e0%ae%9f%e0%ae%95%e0%af%8d%e0%ae%95%e0%ae%bf%e0%ae%b2%e0%af%8d-%e0%ae%a4%e0%af%86%e0%ae%99%e0%af%8d%e0%ae%95%e0%af%81-%e0%ae%ae%e0%af%81%e0%ae%95%e0%af%8d%e0%ae%95%e0%af%8b%e0%ae%a3%e0%ae%a4/)**
 
 - In **JSON**, **TXT** & **🤗 Hugging Face**
 
@@ -79,9 +79,9 @@ A Sri Lanka Presidential Media Division press release shares official updates on
 - 2025-09-02 | `01253f` | President Launches Series of Development Projects in the… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_release/2020s/2025/2025-09-02-01253f)
 - 2025-09-01 | `fd4ee1` | President declares open the Immigration and Emigration Department’s… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_release/2020s/2025/2025-09-01-fd4ee1)
 - 2025-09-01 | `f8db63` | ආගමන හා විගමන දෙපාර්තමේන්තුවේ යාපනය ප්‍රාදේශීය කාර්යාලය ජනපති… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_release/2020s/2025/2025-09-01-f8db63)
+- 2025-09-01 | `d089e7` | ஜனாதிபதி இன்று யாழ்ப்பாணத்தில் | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_release/2020s/2025/2025-09-01-d089e7)
 - 2025-09-01 | `c2b213` | ජනපති කච්චතිව් දූපතේ නිරීක්ෂණ චාරිකාවක | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_release/2020s/2025/2025-09-01-c2b213)
 - 2025-09-01 | `c1a595` | Construction of the Jaffna International Cricket Stadium Launched… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_release/2020s/2025/2025-09-01-c1a595)
-- 2025-09-01 | `a061c3` | குடிவரவு மற்றும் குடியகல்வுத் திணைக்களத்தின் யாழ்ப்பாண பிராந்திய அலுவலகம் ஜனாதிபதியால்… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_release/2020s/2025/2025-09-01-a061c3)
 
 ---
 
