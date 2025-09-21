@@ -48,7 +48,7 @@ class PMDPressRelease(AbstractDoc):
         return article_title, article_body_paragraphs
 
     @classmethod
-    def process_article(cls, div, num_set):
+    def parse_article(cls, div, lang, num_set):
         h4 = div.find('h4')
         description = h4.text.strip()
         a = h4.find('a')
@@ -92,7 +92,7 @@ class PMDPressRelease(AbstractDoc):
         has_no_next_page = a_next_page is None
 
         doc_list = Parallel.map(
-            lambda div: cls.process_article(div, num_set),
+            lambda div: cls.parse_article(div, lang, num_set),
             divs,
             max_threads=cls.MAX_THREADS,
         )
