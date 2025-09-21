@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from functools import cached_property
 from typing import Generator
 
 from utils import Hash, Log, Parallel
