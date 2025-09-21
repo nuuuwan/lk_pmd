@@ -36,7 +36,10 @@ class PMDPressRelease(AbstractDoc):
 
     @cached_property
     def text_from_metadata(self) -> str:
-        return "\n".join([self.description, self.article_title] + self.article_body_paragraphs)
+        return "\n".join(
+            [self.description, self.article_title]
+            + self.article_body_paragraphs
+        )
 
     @classmethod
     def scrape_pmd_article(cls, url: str) -> tuple[str, str]:
