@@ -1,14 +1,14 @@
 # 📢#SriLanka 🇱🇰 Pmd Press Releases `Dataset`
 
-![LastUpdated](https://img.shields.io/badge/last_updated-2025--09--21_16:47:59-green)
+![LastUpdated](https://img.shields.io/badge/last_updated-2025--09--21_16:50:20-green)
 
 [https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases)
 
 A Sri Lanka Presidential Media Division press release shares official updates on national decisions, policies, or events. It’s vital as the authoritative source ensuring transparency and public awareness.
 
-- [**32** documents](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases) (**44.7 MB**), from **2025-09-01** to **2025-09-02**, scraped from **[https://pmd.gov.lk](https://pmd.gov.lk)**
+- [**862** documents](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases) (**47.8 MB**), from **2025-05-05** to **2025-09-02**, scraped from **[https://pmd.gov.lk](https://pmd.gov.lk)**
 
-- In **JSON**, **TXT** & **🤗 Hugging Face**
+- In **JSON**, **TXT** (45%) & **🤗 Hugging Face** (45%)
 
 - In **සිංහල**, **தமிழ்** & **English**
 
@@ -26,7 +26,7 @@ A Sri Lanka Presidential Media Division press release shares official updates on
 }
 ```
 
-![Chart](https://raw.githubusercontent.com/nuuuwan/lk_pmd/refs/heads/data/data/lk_pmd_press_releases/docs_by_year_and_lang.png)
+![Chart](https://raw.githubusercontent.com/nuuuwan/lk_pmd/refs/heads/data/data/lk_pmd_press_releases/docs_by_month_and_lang.png)
 
 ## 🤗 Hugging Face Datasets
 
@@ -52,11 +52,11 @@ A Sri Lanka Presidential Media Division press release shares official updates on
 - 2025-09-02 | `en-bce82b` | Launch of the Northern Coconut Triangle under the… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-en-bce82b)
 - 2025-09-02 | `en-539c86` | First Coconut Seed Production Unit in the North… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-en-539c86)
 - 2025-09-02 | `en-01253f` | President Launches Series of Development Projects in the… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-en-01253f)
+- 2025-09-01 | `ta-d089e7` | ஜனாதிபதி இன்று யாழ்ப்பாணத்தில் | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-01-ta-d089e7)
 - 2025-09-01 | `ta-a061c3` | குடிவரவு மற்றும் குடியகல்வுத் திணைக்களத்தின் யாழ்ப்பாண பிராந்திய அலுவலகம் ஜனாதிபதியால்… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-01-ta-a061c3)
 - 2025-09-01 | `ta-6e65dc` | யாழ்ப்பாணம் மயிலிட்டி மீன்பிடி துறைமுக மூன்றாம் கட்ட அபிவிருத்திப் பணிகள்… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-01-ta-6e65dc)
 - 2025-09-01 | `ta-3efd2e` | யாழ்ப்பாண நூலக மின் நூலகத் திட்டம் ஜனாதிபதியின் தலைமையில் ஆரம்பிக்கப்பட்டது | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-01-ta-3efd2e)
 - 2025-09-01 | `ta-33c952` | கச்சதீவிற்கு ஜனாதிபதி கண்காணிப்பு விஜயம் | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-01-ta-33c952)
-- 2025-09-01 | `ta-0ac981` | யாழ்ப்பாணம் சர்வதேச கிரிக்கெட் மைதானத்தின் நிர்மாணப் பணிகள் ஜனாதிபதி தலைமையில்… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-01-ta-0ac981)
 
 ---
 

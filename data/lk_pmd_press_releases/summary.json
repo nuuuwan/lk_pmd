@@ -2,20 +2,20 @@
   "doc_class_label": "lk_pmd_press_releases",
   "doc_class_emoji": "\ud83d\udce2",
   "doc_class_description": "A Sri Lanka Presidential Media Division press release shares official updates on national decisions, policies, or events. It\u2019s vital as the authoritative source ensuring transparency and public awareness.",
-  "time_updated": "2025-09-21 16:47:59",
-  "n_docs": 32,
+  "time_updated": "2025-09-21 16:50:19",
+  "n_docs": 862,
   "n_docs_with_pdfs": 0,
-  "n_docs_with_text": 32,
-  "date_str_min": "2025-09-01",
+  "n_docs_with_text": 384,
+  "date_str_min": "2025-05-05",
   "date_str_max": "2025-09-02",
-  "dataset_size": 44562147,
+  "dataset_size": 47710005,
   "url_source": "https://pmd.gov.lk",
   "url_data": "https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases",
-  "url_chart": "https://raw.githubusercontent.com/nuuuwan/lk_pmd/refs/heads/data/data/lk_pmd_press_releases/docs_by_year_and_lang.png",
+  "url_chart": "https://raw.githubusercontent.com/nuuuwan/lk_pmd/refs/heads/data/data/lk_pmd_press_releases/docs_by_month_and_lang.png",
   "langs": [
-    "ta",
+    "si",
     "en",
-    "si"
+    "ta"
   ],
   "latest_doc_d": {
     "doc_type": "lk_pmd_press_releases",
