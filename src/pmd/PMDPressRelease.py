@@ -128,6 +128,8 @@ class PMDPressRelease(AbstractDoc):
 
             if no_new_docs:
                 return
+            if len(completed_lang_set) == 3:
+                return
 
             i_page += 1
 
