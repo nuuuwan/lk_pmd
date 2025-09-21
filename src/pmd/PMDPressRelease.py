@@ -127,9 +127,10 @@ class PMDPressRelease(AbstractDoc):
             set([doc.num for doc in doc_list]) if doc_list else set()
         )  # HACKY
 
-        completed_lang_set = set
+        completed_lang_set = set()
         i_page = 1
         while True:
+            no_new_docs = True
             for lang in ['si', 'en', 'ta']:
                 if lang in completed_lang_set:
                     continue
@@ -137,5 +138,10 @@ class PMDPressRelease(AbstractDoc):
                 if has_no_next_page:
                     completed_lang_set.add(lang)
                 for doc in docs_list:
+                    no_new_docs = False
                     yield doc
+
+            if no_new_docs:
+                return
+
             i_page += 1
