@@ -48,7 +48,7 @@ class PMDPressRelease(AbstractDoc):
         return article_title, article_body_paragraphs
 
     @classmethod
-    def parse_article(cls, div, lang, num_set):
+    def parse_article(cls, div, lang, num_set) -> 'PMDPressRelease':
         h4 = div.find('h4')
         description = h4.text.strip()
         a = h4.find('a')
@@ -67,7 +67,7 @@ class PMDPressRelease(AbstractDoc):
 
         article_title, article_body_paragraphs = cls.scrape_pmd_article(url)
 
-        yield cls(
+        return cls(
             num=num,
             date_str=date_str,
             description=description,
@@ -80,7 +80,7 @@ class PMDPressRelease(AbstractDoc):
     @classmethod
     def get_docs_for_page(
         cls, lang, i_page: int, num_set: set[str]
-    ) -> Generator['PMDPressRelease', None, None]:
+    ) -> list['PMDPressRelease']:
         url_base_lang = cls.LANG_TO_URL_BASE_LANG[lang]
         url = f'{url_base_lang}/page/{i_page}/'
         www = WWW(url)
