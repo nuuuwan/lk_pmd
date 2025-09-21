@@ -1,14 +1,21 @@
 from typing import Generator
 
-from utils import Hash, Log, TimeFormat
+from utils import Hash, Log
 
 from scraper import AbstractDoc
 from utils_future import WWW
+from dataclasses import dataclass
 
 log = Log('PMDPressRelease')
 
 
+
+
+@dataclass
 class PMDPressRelease(AbstractDoc):
+    article_title: str
+    article_body_paragraphs: list[str]
+
     URL_BASE = 'https://pmd.gov.lk'
 
     LANG_TO_URL_BASE_LANG = {
@@ -28,6 +35,23 @@ class PMDPressRelease(AbstractDoc):
     @classmethod
     def get_doc_class_emoji(cls):
         return '📢'
+    
+    @classmethod
+    def scrape_pmd_article(cls, url: str) -> tuple[str, str]:
+        www = WWW(url)
+        soup = www.soup
+        assert soup
+
+        div = soup.find('div', class_='post-inner')
+        h2 = div.find('h2')
+        article_title = h2.text.strip()
+
+        article_body_paragraphs = []
+        for p in div.find_all('p'):
+            article_body_paragraphs.append(p.text.strip())
+
+        return article_title, article_body_paragraphs
+
 
     @classmethod
     def gen_docs_for_page(
@@ -46,26 +70,25 @@ class PMDPressRelease(AbstractDoc):
             a = h4.find('a')
             url = a['href']
             span_date = div.find('span', class_='timeline-date')
-            date_str_mm_dd_yyyy = span_date.text.strip()
-            if len(date_str_mm_dd_yyyy) == 9:
-                date_str_mm_dd_yyyy = (
-                    date_str_mm_dd_yyyy[:3] + '0' + date_str_mm_dd_yyyy[3:]
-                )
+            d_part, m_part, y_part = [int(x) for x in span_date.text.split('-')]
+            date_str = f'20{y_part:02d}-{m_part:02d}-{d_part:02d}'
             assert (
-                len(date_str_mm_dd_yyyy) == 10
-                and date_str_mm_dd_yyyy[2] == '-'
-                and date_str_mm_dd_yyyy[5] == '-'
-            ), date_str_mm_dd_yyyy
-            date_str = TimeFormat.DATE.format(
-                TimeFormat('%m-%d-%Y').parse(date_str_mm_dd_yyyy),
-            )
+                len(date_str) == 10
+                and date_str[4] == '-'
+                and date_str[7] == '-'
+            ), date_str
             hash_description = Hash.md5(description)[:6]
+
+            article_title, article_body_paragraphs = cls.scrape_pmd_article(url)
+
             yield cls(
                 num=f'{date_str}-{hash_description}',
                 date_str=date_str,
                 description=description,
                 url_metadata=url,
                 lang=lang,
+                article_title=article_title,
+                article_body_paragraphs=article_body_paragraphs,
             )
 
     @classmethod
@@ -78,10 +101,8 @@ class PMDPressRelease(AbstractDoc):
             for doc in cls.gen_docs_for_page(lang, i_page):
                 yield doc
                 has_docs = True
-
             if not has_docs:
                 return
-
             i_page += 1
 
     @classmethod
