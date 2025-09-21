@@ -54,7 +54,7 @@ class PMDPressRelease(AbstractDoc):
         a = h4.find('a')
         url = a['href']
         span_date = div.find('span', class_='timeline-date')
-        d_part, m_part, y_part = [int(x) for x in span_date.text.split('-')]
+        m_part, d_part, y_part = [int(x) for x in span_date.text.split('-')]
         date_str = f'20{y_part:02d}-{m_part:02d}-{d_part:02d}'
         assert (
             len(date_str) == 10 and date_str[4] == '-' and date_str[7] == '-'
