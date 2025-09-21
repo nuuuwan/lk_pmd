@@ -133,4 +133,5 @@ class PMDPressRelease(AbstractDoc):
             set([doc.num for doc in doc_list]) if doc_list else set()
         )  # HACKY
         for lang in ['en', 'si', 'ta']:
-            yield from cls.gen_docs_for_lang(lang, num_set)
+            for doc in cls.gen_docs_for_lang(lang, num_set):
+                yield doc
