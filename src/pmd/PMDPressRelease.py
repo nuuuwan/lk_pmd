@@ -31,7 +31,7 @@ class PMDPressRelease(AbstractDoc):
 
     @classmethod
     def get_doc_class_label(cls):
-        return 'lk_pmd_press_release'
+        return 'lk_pmd_press_releases'
 
     @classmethod
     def get_doc_class_description(cls):
