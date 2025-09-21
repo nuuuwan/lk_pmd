@@ -1,8 +1,7 @@
 from dataclasses import dataclass
-from functools import cached_property
 from typing import Generator
 
-from utils import Hash, Log, Parallel
+from utils import File, Hash, Log, Parallel
 
 from scraper import AbstractDoc
 from utils_future import WWW
@@ -12,9 +11,6 @@ log = Log('PMDPressRelease')
 
 @dataclass
 class PMDPressRelease(AbstractDoc):
-    article_title: str
-    article_body_paragraphs: list[str]
-
     URL_BASE = 'https://pmd.gov.lk'
 
     LANG_TO_URL_BASE_LANG = {
@@ -40,13 +36,6 @@ class PMDPressRelease(AbstractDoc):
     @classmethod
     def get_doc_class_emoji(cls):
         return '📢'
-
-    @cached_property
-    def text_from_metadata(self) -> str:
-        return "\n".join(
-            [self.description, self.article_title]
-            + self.article_body_paragraphs
-        )
 
     @classmethod
     def scrape_pmd_article(cls, url: str) -> tuple[str, str]:
@@ -77,11 +66,9 @@ class PMDPressRelease(AbstractDoc):
             len(date_str) == 10 and date_str[4] == '-' and date_str[7] == '-'
         ), date_str
         num = f'{lang}-{Hash.md5(description)[:6]}'
-    
+
         if num in num_set:
             return None
-
-        article_title, article_body_paragraphs = cls.scrape_pmd_article(url)
 
         return cls(
             num=num,
@@ -89,8 +76,6 @@ class PMDPressRelease(AbstractDoc):
             description=description,
             url_metadata=url,
             lang=lang,
-            article_title=article_title,
-            article_body_paragraphs=article_body_paragraphs,
         )
 
     @classmethod
@@ -118,8 +103,6 @@ class PMDPressRelease(AbstractDoc):
 
         return has_no_next_page, doc_list
 
-
-
     @classmethod
     def gen_docs(cls) -> Generator['PMDPressRelease', None, None]:
         doc_list = cls.list_all()
@@ -134,7 +117,9 @@ class PMDPressRelease(AbstractDoc):
             for lang in ['si', 'en', 'ta']:
                 if lang in completed_lang_set:
                     continue
-                has_no_next_page, docs_list = cls.get_docs_for_page(lang, i_page, num_set)
+                has_no_next_page, docs_list = cls.get_docs_for_page(
+                    lang, i_page, num_set
+                )
                 if has_no_next_page:
                     completed_lang_set.add(lang)
                 for doc in docs_list:
@@ -145,3 +130,19 @@ class PMDPressRelease(AbstractDoc):
                 return
 
             i_page += 1
+
+    def extract_text(self):
+        if self.has_text:
+            return
+        article_title, article_body_paragraphs = self.scrape_pmd_article(
+            self.url_metadata
+        )
+        content = '\n\n'.join(
+            [
+                self.description,
+                article_title,
+            ]
+            + article_body_paragraphs
+        )
+        File(self.text_path).write(content)
+        log.info(f"Wrote {self.text_path}")
