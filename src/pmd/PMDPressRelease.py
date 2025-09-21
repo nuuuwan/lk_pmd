@@ -1,14 +1,12 @@
+from dataclasses import dataclass
 from typing import Generator
 
 from utils import Hash, Log
 
 from scraper import AbstractDoc
 from utils_future import WWW
-from dataclasses import dataclass
 
 log = Log('PMDPressRelease')
-
-
 
 
 @dataclass
@@ -35,7 +33,7 @@ class PMDPressRelease(AbstractDoc):
     @classmethod
     def get_doc_class_emoji(cls):
         return '📢'
-    
+
     @classmethod
     def scrape_pmd_article(cls, url: str) -> tuple[str, str]:
         www = WWW(url)
@@ -51,7 +49,6 @@ class PMDPressRelease(AbstractDoc):
             article_body_paragraphs.append(p.text.strip())
 
         return article_title, article_body_paragraphs
-
 
     @classmethod
     def gen_docs_for_page(
@@ -70,7 +67,9 @@ class PMDPressRelease(AbstractDoc):
             a = h4.find('a')
             url = a['href']
             span_date = div.find('span', class_='timeline-date')
-            d_part, m_part, y_part = [int(x) for x in span_date.text.split('-')]
+            d_part, m_part, y_part = [
+                int(x) for x in span_date.text.split('-')
+            ]
             date_str = f'20{y_part:02d}-{m_part:02d}-{d_part:02d}'
             assert (
                 len(date_str) == 10
@@ -83,7 +82,9 @@ class PMDPressRelease(AbstractDoc):
             if num in num_set:
                 continue
 
-            article_title, article_body_paragraphs = cls.scrape_pmd_article(url)
+            article_title, article_body_paragraphs = cls.scrape_pmd_article(
+                url
+            )
 
             yield cls(
                 num=num,
@@ -112,6 +113,8 @@ class PMDPressRelease(AbstractDoc):
     @classmethod
     def gen_docs(cls) -> Generator['PMDPressRelease', None, None]:
         doc_list = cls.list_all()
-        num_set = set( [doc.num for doc in doc_list])
+        num_set = (
+            set([doc.num for doc in doc_list]) if doc_list else set()
+        )  # HACKY
         for lang in ['en', 'si', 'ta']:
             yield from cls.gen_docs_for_lang(lang, num_set)
