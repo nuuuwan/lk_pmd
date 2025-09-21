@@ -118,20 +118,7 @@ class PMDPressRelease(AbstractDoc):
 
         return has_no_next_page, doc_list
 
-    @classmethod
-    def gen_docs_for_lang(
-        cls, lang: str, num_set: set[str]
-    ) -> Generator['PMDPressRelease', None, None]:
-        i_page = 1
-        while True:
-            has_no_next_page, doc_list = cls.get_docs_for_page(
-                lang, i_page, num_set
-            )
-            for doc in doc_list:
-                yield doc
-            if has_no_next_page:
-                break
-            i_page += 1
+
 
     @classmethod
     def gen_docs(cls) -> Generator['PMDPressRelease', None, None]:
@@ -139,6 +126,14 @@ class PMDPressRelease(AbstractDoc):
         num_set = (
             set([doc.num for doc in doc_list]) if doc_list else set()
         )  # HACKY
-        for lang in ['en', 'si', 'ta']:
-            for doc in cls.gen_docs_for_lang(lang, num_set):
-                yield doc
+
+        completed_lang_set = set
+        i_page = 1
+        while True:
+            for lang in ['si', 'en', 'ta']:
+                if lang in completed_lang_set:
+                    continue
+                has_no_next_page, docs_list = cls.get_docs_for_page(lang, i_page, num_set)
+                if has_no_next_page:
+                    completed_lang_set.add(lang)
+            i_page += 1
