@@ -136,4 +136,6 @@ class PMDPressRelease(AbstractDoc):
                 has_no_next_page, docs_list = cls.get_docs_for_page(lang, i_page, num_set)
                 if has_no_next_page:
                     completed_lang_set.add(lang)
+                for doc in docs_list:
+                    yield doc
             i_page += 1
