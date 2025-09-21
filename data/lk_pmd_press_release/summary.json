@@ -1,0 +1,36 @@
+{
+  "doc_class_label": "lk_pmd_press_release",
+  "doc_class_emoji": "\ud83d\udce2",
+  "doc_class_description": "A Sri Lanka Presidential Media Division press release shares official updates on national decisions, policies, or events. It\u2019s vital as the authoritative source ensuring transparency and public awareness.",
+  "time_updated": "2025-09-21 14:28:13",
+  "n_docs": 127,
+  "n_docs_with_pdfs": 0,
+  "n_docs_with_text": 127,
+  "date_str_min": "2025-07-11",
+  "date_str_max": "2025-09-02",
+  "dataset_size": 1490021,
+  "url_source": "https://pmd.gov.lk/news/first-railway-station-renovation-of-the-dream-destination-programme-begins-in-talpe/",
+  "url_data": "https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_release",
+  "url_chart": "https://raw.githubusercontent.com/nuuuwan/lk_pmd/refs/heads/data/data/lk_pmd_press_release/docs_by_day_and_lang.png",
+  "langs": [
+    "en"
+  ],
+  "latest_doc_d": {
+    "doc_type": "lk_pmd_press_release",
+    "doc_id": "2025-09-02-2025-09-02-eeedbd",
+    "num": "2025-09-02-eeedbd",
+    "date_str": "2025-09-02",
+    "description": "First Railway Station Renovation of the \u201cDream Destination\u201d\u2026",
+    "url_metadata": "https://pmd.gov.lk/news/first-railway-station-renovation-of-the-dream-destination-programme-begins-in-talpe/",
+    "lang": "en",
+    "article_title": "First Railway Station Renovation of the \u201cDream Destination\u201d Programme Begins in Talpe",
+    "article_body_paragraphs": [
+      "The first phase of the national programme \u201cDream Destination\u201d, which aims to renovate 100 railway stations across the country, was launched today (02) at the Talpe Railway Station under the patronage of Deputy Minister of Transport and Highways Prasanna Gunasena.",
+      "This initiative, implemented as a joint effort of the government, private sector and the public, seeks to rebrand Sri Lanka\u2019s railway stations with a modern identity that aligns with international standards.",
+      "The Ministry of Transport, Highways, Ports and Civil Aviation, together with the Clean Sri Lanka programme and private sector contributions, will oversee the modernization of 100 railway stations under this project.",
+      "Deputy Minister Prasanna Gunasena emphasized that revitalizing the railway service is like awakening a \u201csleeping giant,\u201d highlighting the government\u2019s commitment to transforming public transport into a high-quality service.",
+      "He further stated that the improvement of public transport would also boost the tourism industry and expressed confidence that, within the next two years, Sri Lanka would move toward rapid development as a nation built on hard work.",
+      "The event was also attended by Deputy Minister of Fisheries, Aquatic and Ocean Resources Rathna Gamage, COPE Committee Chairman MP Dr. Nishantha Samaraweera, General Manager of Railways Department Ravindra Padmapriya, Clean Sri Lanka Director (Social) Kapila Senarath, Director (Coordination) Dasun Wijesekara, Star Garments Managing Director A. Sukumaran, Chairman of the Habaraduwa Pradeshiya Sabha Harsha Punchihewa and NIO Engineering convener Lakmina Samarasekara, along with several others."
+    ]
+  }
+}
