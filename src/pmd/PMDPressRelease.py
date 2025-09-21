@@ -47,7 +47,6 @@ class PMDPressRelease(AbstractDoc):
             article_body_paragraphs.append(p.text.strip())
         return article_title, article_body_paragraphs
 
-
     @classmethod
     def process_article(cls, div, num_set):
         h4 = div.find('h4')
@@ -55,14 +54,10 @@ class PMDPressRelease(AbstractDoc):
         a = h4.find('a')
         url = a['href']
         span_date = div.find('span', class_='timeline-date')
-        d_part, m_part, y_part = [
-            int(x) for x in span_date.text.split('-')
-        ]
+        d_part, m_part, y_part = [int(x) for x in span_date.text.split('-')]
         date_str = f'20{y_part:02d}-{m_part:02d}-{d_part:02d}'
         assert (
-            len(date_str) == 10
-            and date_str[4] == '-'
-            and date_str[7] == '-'
+            len(date_str) == 10 and date_str[4] == '-' and date_str[7] == '-'
         ), date_str
         hash_description = Hash.md5(description)[:6]
         num = f'{date_str}-{hash_description}'
@@ -70,9 +65,7 @@ class PMDPressRelease(AbstractDoc):
         if num in num_set:
             return None
 
-        article_title, article_body_paragraphs = cls.scrape_pmd_article(
-            url
-        )
+        article_title, article_body_paragraphs = cls.scrape_pmd_article(url)
 
         yield cls(
             num=num,
@@ -104,9 +97,8 @@ class PMDPressRelease(AbstractDoc):
             max_threads=cls.MAX_THREADS,
         )
         doc_list = [doc for doc in doc_list if doc is not None]
-        
-        return has_no_next_page, doc_list
 
+        return has_no_next_page, doc_list
 
     @classmethod
     def gen_docs_for_lang(
@@ -114,7 +106,9 @@ class PMDPressRelease(AbstractDoc):
     ) -> Generator['PMDPressRelease', None, None]:
         i_page = 1
         while True:
-            has_no_next_page, doc_list = cls.get_docs_for_page(lang, i_page, num_set)
+            has_no_next_page, doc_list = cls.get_docs_for_page(
+                lang, i_page, num_set
+            )
             for doc in doc_list:
                 yield doc
             if has_no_next_page:
