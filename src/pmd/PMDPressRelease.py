@@ -23,6 +23,12 @@ class PMDPressRelease(AbstractDoc):
         'ta': f'{URL_BASE}/ta/செய்தி-ஊடக-அறிக்கை',
     }
 
+    LANG_TO_NEXT_TEXT = {
+        'en': 'Next Page »',
+        'si': 'ඉදිරි පිටුවට »',
+        'ta': 'அடுத்த பக்கம் »',
+    }
+
     @classmethod
     def get_doc_class_label(cls):
         return 'lk_pmd_press_release'
@@ -99,7 +105,8 @@ class PMDPressRelease(AbstractDoc):
         assert soup
         divs = soup.find_all('div', class_='post_row')
 
-        a_next_page = soup.find('a', text='Next Page »')
+        next_text = cls.LANG_TO_NEXT_TEXT[lang]
+        a_next_page = soup.find('a', text=next_text)
         has_no_next_page = a_next_page is None
 
         doc_list = Parallel.map(
