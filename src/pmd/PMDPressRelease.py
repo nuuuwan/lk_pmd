@@ -55,7 +55,7 @@ class PMDPressRelease(AbstractDoc):
 
     @classmethod
     def gen_docs_for_page(
-        cls, lang, i_page: int
+        cls, lang, i_page: int, num_set: set[str]
     ) -> Generator['PMDPressRelease', None, None]:
         url_base_lang = cls.LANG_TO_URL_BASE_LANG[lang]
         url = f'{url_base_lang}/page/{i_page}/'
@@ -78,11 +78,15 @@ class PMDPressRelease(AbstractDoc):
                 and date_str[7] == '-'
             ), date_str
             hash_description = Hash.md5(description)[:6]
+            num = f'{date_str}-{hash_description}'
+
+            if num in num_set:
+                continue
 
             article_title, article_body_paragraphs = cls.scrape_pmd_article(url)
 
             yield cls(
-                num=f'{date_str}-{hash_description}',
+                num=num,
                 date_str=date_str,
                 description=description,
                 url_metadata=url,
@@ -93,12 +97,12 @@ class PMDPressRelease(AbstractDoc):
 
     @classmethod
     def gen_docs_for_lang(
-        cls, lang: str
+        cls, lang: str, num_set: set[str]
     ) -> Generator['PMDPressRelease', None, None]:
         i_page = 1
         while True:
             has_docs = False
-            for doc in cls.gen_docs_for_page(lang, i_page):
+            for doc in cls.gen_docs_for_page(lang, i_page, num_set):
                 yield doc
                 has_docs = True
             if not has_docs:
@@ -107,5 +111,7 @@ class PMDPressRelease(AbstractDoc):
 
     @classmethod
     def gen_docs(cls) -> Generator['PMDPressRelease', None, None]:
+        doc_list = cls.list_all()
+        num_set = set( [doc.num for doc in doc_list])
         for lang in ['en', 'si', 'ta']:
-            yield from cls.gen_docs_for_lang(lang)
+            yield from cls.gen_docs_for_lang(lang, num_set)
