@@ -91,6 +91,7 @@ class PMDPressRelease(AbstractDoc):
     def get_docs_for_page(
         cls, lang, i_page: int, num_set: set[str]
     ) -> list['PMDPressRelease']:
+        log.info(f'{lang=}, {i_page=:,}')
         url_base_lang = cls.LANG_TO_URL_BASE_LANG[lang]
         url = f'{url_base_lang}/page/{i_page}/'
         www = WWW(url)
