@@ -1,12 +1,12 @@
 # 📢#SriLanka 🇱🇰 Pmd Press Releases `Dataset`
 
-![LastUpdated](https://img.shields.io/badge/last_updated-2025--09--22_12:27:23-green)
+![LastUpdated](https://img.shields.io/badge/last_updated-2025--09--26_08:23:47-green)
 
-[https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases)
+[https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases)
 
 A Sri Lanka Presidential Media Division press release shares official updates on national decisions, policies, or events. It’s vital as the authoritative source ensuring transparency and public awareness.
 
-- [**2,166** documents](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases) (**58.0 MB**), from **2024-09-23** to **2025-09-02**, scraped from **[https://pmd.gov.lk](https://pmd.gov.lk)**
+- [**2,182** documents](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases) (**55.9 MB**), from **2024-09-23** to **2025-09-24**, scraped from **[https://pmd.gov.lk](https://pmd.gov.lk)**
 
 - In **JSON**, **TXT** & **🤗 Hugging Face**
 
@@ -17,16 +17,16 @@ A Sri Lanka Presidential Media Division press release shares official updates on
 ```json
 {
     "doc_type": "lk_pmd_press_releases",
-    "doc_id": "2025-09-02-ta-ef3a57",
-    "num": "ta-ef3a57",
-    "date_str": "2025-09-02",
-    "description": "\u0bb5\u0b9f\u0b95\u0bcd\u0b95\u0bbf\u0bb2\u0bcd \u0ba4\u0bc6\u0b99\u0bcd\u0b95\u0bc1 \u0bae\u0bc1\u0b95\u0bcd\u0b95\u0bcb\u0ba3\u0ba4\u0bcd\u0ba4\u0bc8 \u0bae\u0bc1\u0ba9\u0bcd\u0ba9\u0bc6\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd \u0b86\u0bb0\u0bae\u0bcd\u0baa \u0ba8\u0bbf\u0b95\u0bb4\u0bcd\u0bb5\u0bc1 \u0b9c\u0ba9\u0bbe\u0ba4\u0bbf\u0baa\u0ba4\u0bbf \u0ba4\u0bb2\u0bc8\u0bae\u0bc8\u0baf\u0bbf\u0bb2\u0bcd\u2026",
-    "url_metadata": "https://pmd.gov.lk/ta/%e0%ae%9a%e0%af%86%e0%ae%af%e0%af%8d%e0%ae%a4%e0%ae%bf/%e0%ae%b5%e0%ae%9f%e0%ae%95%e0%af%8d%e0%ae%95%e0%ae%bf%e0%ae%b2%e0%af%8d-%e0%ae%a4%e0%af%86%e0%ae%99%e0%af%8d%e0%ae%95%e0%af%81-%e0%ae%ae%e0%af%81%e0%ae%95%e0%af%8d%e0%ae%95%e0%af%8b%e0%ae%a3%e0%ae%a4/",
+    "doc_id": "2025-09-24-ta-f6263c",
+    "num": "ta-f6263c",
+    "date_str": "2025-09-24",
+    "description": "\u0b9c\u0ba9\u0bbe\u0ba4\u0bbf\u0baa\u0ba4\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd \u0baa\u0bbe\u0b95\u0bbf\u0bb8\u0bcd\u0ba4\u0bbe\u0ba9\u0bcd \u0baa\u0bbf\u0bb0\u0ba4\u0bae\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd \u0b87\u0b9f\u0bc8\u0baf\u0bc7 \u0b87\u0bb0\u0bc1\u0ba4\u0bb0\u0baa\u0bcd\u0baa\u0bc1 \u0baa\u0bc7\u0b9a\u0bcd\u0b9a\u0bc1\u0bb5\u0bbe\u0bb0\u0bcd\u0ba4\u0bcd\u0ba4\u0bc8\u0b95\u0bb3\u0bcd",
+    "url_metadata": "https://pmd.gov.lk/ta/%e0%ae%9a%e0%af%86%e0%ae%af%e0%af%8d%e0%ae%a4%e0%ae%bf/%e0%ae%9c%e0%ae%a9%e0%ae%be%e0%ae%a4%e0%ae%bf%e0%ae%aa%e0%ae%a4%e0%ae%bf%e0%ae%95%e0%af%8d%e0%ae%95%e0%af%81%e0%ae%ae%e0%af%8d-%e0%ae%aa%e0%ae%be%e0%ae%95%e0%ae%bf%e0%ae%b8%e0%af%8d%e0%ae%a4%e0%ae%be/",
     "lang": "ta"
 }
 ```
 
-![Chart](https://raw.githubusercontent.com/nuuuwan/lk_pmd/refs/heads/data/data/lk_pmd_press_releases/docs_by_month_and_lang.png)
+![Chart](https://raw.githubusercontent.com/nuuuwan/lk_pmd/refs/heads/data_lk_pmd_press_releases/data/lk_pmd_press_releases/docs_by_month_and_lang.png)
 
 ## 🤗 Hugging Face Datasets
 
@@ -37,26 +37,26 @@ A Sri Lanka Presidential Media Division press release shares official updates on
 
 ## 🆕 20 Latest documents
 
-- 2025-09-02 | `ta-ef3a57` | வடக்கில் தெங்கு முக்கோணத்தை முன்னெடுக்கும் ஆரம்ப நிகழ்வு ஜனாதிபதி தலைமையில்… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-ta-ef3a57)
-- 2025-09-02 | `ta-c05b42` | ஜனாதிபதி இன்றும் வடக்கில் பல அபிவிருத்தித் திட்டங்களில் பங்கேற்கவுள்ளார் | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-ta-c05b42)
-- 2025-09-02 | `ta-90e869` | “Dream Destination” முதல் புகையிரத நிலைய நவீனமயமாக்கல் தல்பேயில் ஆரம்பம் | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-ta-90e869)
-- 2025-09-02 | `ta-7d9fe3` | வடக்கின் முதல் விதை தேங்காய் உற்பத்தி அலகு ஜனாதிபதியின் தலைமையில்… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-ta-7d9fe3)
-- 2025-09-02 | `ta-4f46ac` | முல்லைத்தீவில் வட்டுவாகல் பாலத்தின் நிர்மாணப் பணிகள் ஜனாதிபதியின் தலைமையில் ஆரம்பம் | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-ta-4f46ac)
-- 2025-09-02 | `si-9b0164` | “සිහින ගමනාන්තයේ” පළමු දුම්රිය ස්ථානය නවීකරණය තල්පෙන් ඇරඹේ | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-si-9b0164)
-- 2025-09-02 | `si-930040` | උතුරේ පළමු බීජ පොල් නිෂ්පාදන ඒකකය ජනපති ප්‍රධානත්වයෙන්… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-si-930040)
-- 2025-09-02 | `si-27bdf3` | මුලතිව් වට්ටුවාකල් පාලමේ ඉදිකිරීම් ජනපති ප්‍රධානත්වයෙන් ඇරඹේ | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-si-27bdf3)
-- 2025-09-02 | `si-2363fd` | ජනපති අදත් උතුරේ සංවර්ධන ව්‍යාපෘති රැසක | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-si-2363fd)
-- 2025-09-02 | `si-0f3524` | උතුරේ පොල් ත්‍රිකෝණය දියත් කිරීමේ සමාරම්භක අවස්ථාව ජනපති… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-si-0f3524)
-- 2025-09-02 | `en-eeedbd` | First Railway Station Renovation of the “Dream Destination”… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-en-eeedbd)
-- 2025-09-02 | `en-c3d210` | Construction of Vadduvakal Bridge, Mullaitivu Commences under the… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-en-c3d210)
-- 2025-09-02 | `en-bce82b` | Launch of the Northern Coconut Triangle under the… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-en-bce82b)
-- 2025-09-02 | `en-539c86` | First Coconut Seed Production Unit in the North… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-en-539c86)
-- 2025-09-02 | `en-01253f` | President Launches Series of Development Projects in the… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-02-en-01253f)
-- 2025-09-01 | `ta-d089e7` | ஜனாதிபதி இன்று யாழ்ப்பாணத்தில் | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-01-ta-d089e7)
-- 2025-09-01 | `ta-a061c3` | குடிவரவு மற்றும் குடியகல்வுத் திணைக்களத்தின் யாழ்ப்பாண பிராந்திய அலுவலகம் ஜனாதிபதியால்… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-01-ta-a061c3)
-- 2025-09-01 | `ta-6e65dc` | யாழ்ப்பாணம் மயிலிட்டி மீன்பிடி துறைமுக மூன்றாம் கட்ட அபிவிருத்திப் பணிகள்… | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-01-ta-6e65dc)
-- 2025-09-01 | `ta-3efd2e` | யாழ்ப்பாண நூலக மின் நூலகத் திட்டம் ஜனாதிபதியின் தலைமையில் ஆரம்பிக்கப்பட்டது | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-01-ta-3efd2e)
-- 2025-09-01 | `ta-33c952` | கச்சதீவிற்கு ஜனாதிபதி கண்காணிப்பு விஜயம் | [data](https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases/2020s/2025/2025-09-01-ta-33c952)
+- 2025-09-24 | `ta-f6263c` | ஜனாதிபதிக்கும் பாகிஸ்தான் பிரதமருக்கும் இடையே இருதரப்பு பேச்சுவார்த்தைகள் | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-ta-f6263c)
+- 2025-09-24 | `ta-b548e7` | ஜனாதிபதி மற்றும் தென்னாப்பிரிக்க ஜனாதிபதிக்கு இடையிலான சந்திப்பு | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-ta-b548e7)
+- 2025-09-24 | `ta-8a351e` | ஜனாதிபதி மற்றும் ஐக்கிய நாடுகள் சபையின் மனித உரிமைகள் உயர்ஸ்தானிகர்… | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-ta-8a351e)
+- 2025-09-24 | `ta-80cec8` | ஜனாதிபதிக்கும் ஜனாதிபதி டொனால்ட் டிரம்பின் தெற்கு மற்றும் மத்திய ஆசியாவிற்கான… | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-ta-80cec8)
+- 2025-09-24 | `ta-46600b` | ஜனாதிபதிக்கும் அவுஸ்திரேலிய பிரதமருக்கும் இடையே இருதரப்பு பேச்சுவார்த்தைகள் | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-ta-46600b)
+- 2025-09-24 | `si-a7c1ec` | ජනපති සහ පාකිස්ථාන අගමැති අතර ද්වි-පාර්ශ්වික සාකච්ඡා | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-si-a7c1ec)
+- 2025-09-24 | `si-69ce58` | ජනපති සහ දකුණු අප්‍රිකානු ජනපති අතර හමුවක් | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-si-69ce58)
+- 2025-09-24 | `si-668757` | ජනපති සහ ජනාධිපති ඩොනල්ඩ් ට්‍රම්ප් මහතාගේ දකුණු සහ… | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-si-668757)
+- 2025-09-24 | `si-5f57e6` | ජනපති සහ එක්සත් ජාතීන්ගේ මානව හිමිකම් පිළිබඳ මහකොමසාරිස්… | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-si-5f57e6)
+- 2025-09-24 | `si-4091b8` | ජනපති සහ ඕස්ට්‍රේලියා අගමැති අතර ද්වි-පාර්ශ්වික සාකච්ඡා | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-si-4091b8)
+- 2025-09-24 | `en-f79d14` | President Meets UN High Commissioner for Human Rights | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-en-f79d14)
+- 2025-09-24 | `en-8d55ed` | President Holds Bilateral talks with Australian Prime Minister | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-en-8d55ed)
+- 2025-09-24 | `en-5b19a0` | Meeting between the President and President Donald Trump’s… | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-en-5b19a0)
+- 2025-09-24 | `en-3897dd` | Bilateral Talks between the President and the Pakistani… | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-en-3897dd)
+- 2025-09-24 | `en-0f3ef7` | President Dissanayake meets South African President | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-24-en-0f3ef7)
+- 2025-09-23 | `si-9f94eb` | වැඩබලන අමාත්‍යවරු සිව් දෙනෙක් පත් කෙරේ | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-23-si-9f94eb)
+- 2025-09-02 | `ta-ef3a57` | வடக்கில் தெங்கு முக்கோணத்தை முன்னெடுக்கும் ஆரம்ப நிகழ்வு ஜனாதிபதி தலைமையில்… | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-02-ta-ef3a57)
+- 2025-09-02 | `ta-c05b42` | ஜனாதிபதி இன்றும் வடக்கில் பல அபிவிருத்தித் திட்டங்களில் பங்கேற்கவுள்ளார் | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-02-ta-c05b42)
+- 2025-09-02 | `ta-90e869` | “Dream Destination” முதல் புகையிரத நிலைய நவீனமயமாக்கல் தல்பேயில் ஆரம்பம் | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-02-ta-90e869)
+- 2025-09-02 | `ta-7d9fe3` | வடக்கின் முதல் விதை தேங்காய் உற்பத்தி அலகு ஜனாதிபதியின் தலைமையில்… | [data](https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases/2020s/2025/2025-09-02-ta-7d9fe3)
 
 ---
 

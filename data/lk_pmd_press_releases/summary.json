@@ -2,28 +2,28 @@
   "doc_class_label": "lk_pmd_press_releases",
   "doc_class_emoji": "\ud83d\udce2",
   "doc_class_description": "A Sri Lanka Presidential Media Division press release shares official updates on national decisions, policies, or events. It\u2019s vital as the authoritative source ensuring transparency and public awareness.",
-  "time_updated": "2025-09-22 12:27:22",
-  "n_docs": 2166,
+  "time_updated": "2025-09-26 08:23:47",
+  "n_docs": 2182,
   "n_docs_with_pdfs": 0,
-  "n_docs_with_text": 2166,
+  "n_docs_with_text": 2182,
   "date_str_min": "2024-09-23",
-  "date_str_max": "2025-09-02",
-  "dataset_size": 58035122,
+  "date_str_max": "2025-09-24",
+  "dataset_size": 55904500,
   "url_source": "https://pmd.gov.lk",
-  "url_data": "https://github.com/nuuuwan/lk_pmd/tree/data/data/lk_pmd_press_releases",
-  "url_chart": "https://raw.githubusercontent.com/nuuuwan/lk_pmd/refs/heads/data/data/lk_pmd_press_releases/docs_by_month_and_lang.png",
+  "url_data": "https://github.com/nuuuwan/lk_pmd/tree/data_lk_pmd_press_releases/data/lk_pmd_press_releases",
+  "url_chart": "https://raw.githubusercontent.com/nuuuwan/lk_pmd/refs/heads/data_lk_pmd_press_releases/data/lk_pmd_press_releases/docs_by_month_and_lang.png",
   "langs": [
+    "si",
     "ta",
-    "en",
-    "si"
+    "en"
   ],
   "latest_doc_d": {
     "doc_type": "lk_pmd_press_releases",
-    "doc_id": "2025-09-02-ta-ef3a57",
-    "num": "ta-ef3a57",
-    "date_str": "2025-09-02",
-    "description": "\u0bb5\u0b9f\u0b95\u0bcd\u0b95\u0bbf\u0bb2\u0bcd \u0ba4\u0bc6\u0b99\u0bcd\u0b95\u0bc1 \u0bae\u0bc1\u0b95\u0bcd\u0b95\u0bcb\u0ba3\u0ba4\u0bcd\u0ba4\u0bc8 \u0bae\u0bc1\u0ba9\u0bcd\u0ba9\u0bc6\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd \u0b86\u0bb0\u0bae\u0bcd\u0baa \u0ba8\u0bbf\u0b95\u0bb4\u0bcd\u0bb5\u0bc1 \u0b9c\u0ba9\u0bbe\u0ba4\u0bbf\u0baa\u0ba4\u0bbf \u0ba4\u0bb2\u0bc8\u0bae\u0bc8\u0baf\u0bbf\u0bb2\u0bcd\u2026",
-    "url_metadata": "https://pmd.gov.lk/ta/%e0%ae%9a%e0%af%86%e0%ae%af%e0%af%8d%e0%ae%a4%e0%ae%bf/%e0%ae%b5%e0%ae%9f%e0%ae%95%e0%af%8d%e0%ae%95%e0%ae%bf%e0%ae%b2%e0%af%8d-%e0%ae%a4%e0%af%86%e0%ae%99%e0%af%8d%e0%ae%95%e0%af%81-%e0%ae%ae%e0%af%81%e0%ae%95%e0%af%8d%e0%ae%95%e0%af%8b%e0%ae%a3%e0%ae%a4/",
+    "doc_id": "2025-09-24-ta-f6263c",
+    "num": "ta-f6263c",
+    "date_str": "2025-09-24",
+    "description": "\u0b9c\u0ba9\u0bbe\u0ba4\u0bbf\u0baa\u0ba4\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd \u0baa\u0bbe\u0b95\u0bbf\u0bb8\u0bcd\u0ba4\u0bbe\u0ba9\u0bcd \u0baa\u0bbf\u0bb0\u0ba4\u0bae\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd \u0b87\u0b9f\u0bc8\u0baf\u0bc7 \u0b87\u0bb0\u0bc1\u0ba4\u0bb0\u0baa\u0bcd\u0baa\u0bc1 \u0baa\u0bc7\u0b9a\u0bcd\u0b9a\u0bc1\u0bb5\u0bbe\u0bb0\u0bcd\u0ba4\u0bcd\u0ba4\u0bc8\u0b95\u0bb3\u0bcd",
+    "url_metadata": "https://pmd.gov.lk/ta/%e0%ae%9a%e0%af%86%e0%ae%af%e0%af%8d%e0%ae%a4%e0%ae%bf/%e0%ae%9c%e0%ae%a9%e0%ae%be%e0%ae%a4%e0%ae%bf%e0%ae%aa%e0%ae%a4%e0%ae%bf%e0%ae%95%e0%af%8d%e0%ae%95%e0%af%81%e0%ae%ae%e0%af%8d-%e0%ae%aa%e0%ae%be%e0%ae%95%e0%ae%bf%e0%ae%b8%e0%af%8d%e0%ae%a4%e0%ae%be/",
     "lang": "ta"
   }
 }
