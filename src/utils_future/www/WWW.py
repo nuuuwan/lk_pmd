@@ -1,46 +1,15 @@
-import ssl
 from functools import cached_property
 
-import requests
 import urllib3
 from bs4 import BeautifulSoup
-from requests.adapters import HTTPAdapter
 from urllib3.exceptions import InsecureRequestWarning
 from utils import Log
+
+from utils_future.www.WWWSSLMixin import WWWSSLMixin
 
 log = Log("WebPage")
 
 urllib3.disable_warnings(InsecureRequestWarning)
-
-
-class WWWSSLMixin:
-    class SSLAdapter(HTTPAdapter):
-        def __init__(self, ssl_context: ssl.SSLContext, **kwargs):
-            self._ctx = ssl_context
-            super().__init__(**kwargs)
-
-        def init_poolmanager(
-            self, connections, maxsize, block=False, **pool_kwargs
-        ):
-            pool_kwargs["ssl_context"] = self._ctx
-            return super().init_poolmanager(
-                connections, maxsize, block, **pool_kwargs
-            )
-
-        def proxy_manager_for(self, proxy, **proxy_kwargs):
-            proxy_kwargs["ssl_context"] = self._ctx
-            return super().proxy_manager_for(proxy, **proxy_kwargs)
-
-    @staticmethod
-    def get_session() -> requests.Session:
-        ctx = ssl.create_default_context()
-        ctx.set_ciphers("DEFAULT:@SECLEVEL=1")
-        ctx.check_hostname = False
-        ctx.verify_mode = ssl.CERT_NONE
-
-        s = requests.Session()
-        s.mount("https://", WWWSSLMixin.SSLAdapter(ctx))
-        return s
 
 
 class WWW(WWWSSLMixin):
@@ -68,11 +37,10 @@ class WWW(WWWSSLMixin):
     @cached_property
     def content(self):
         try:
-
             response = WWW.get_session().get(
                 self.url,
-                timeout=self.TIMEOUT,
                 verify=False,
+                timeout=self.TIMEOUT,
                 headers=self.HEADERS,
             )
             response.raise_for_status()
@@ -92,10 +60,7 @@ class WWW(WWWSSLMixin):
     def download_binary(self, local_path):
         try:
             response = WWW.get_session().get(
-                self.url,
-                timeout=self.TIMEOUT,
-                verify=False,
-                headers=self.HEADERS,
+                self.url, timeout=self.TIMEOUT, verify=False
             )
             print(response.status_code)
             response.raise_for_status()
