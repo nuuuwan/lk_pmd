@@ -86,8 +86,7 @@ class PMDPressRelease(AbstractDoc):
         url = f"{url_base_lang}/{prefix}"
         www = WWW(url)
         soup = www.soup
-        if not soup:
-            return True, []
+        assert soup
         divs = soup.find_all("div", class_="post_row")
 
         next_text = cls.LANG_TO_NEXT_TEXT[lang]
