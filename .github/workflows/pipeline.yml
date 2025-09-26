@@ -31,10 +31,10 @@ jobs:
           token: "${{ secrets.REPO_DATA_TOKEN }}"
           fetch-depth: 1
 
-      - name: "⬇️ Checkout data"
+      - name: "⬇️ Checkout data_lk_pmd_press_releases"
         uses: actions/checkout@v4
         with:
-          ref: "data"
+          ref: "data_lk_pmd_press_releases"
           path: "${{ env.REPO_MAIN }}_data"
           token: "${{ secrets.REPO_DATA_TOKEN }}"
           fetch-depth: 1
@@ -63,7 +63,7 @@ jobs:
           git pull origin main --rebase
           git push origin main
 
-      - name: "⬆️ Push data"
+      - name: "⬆️ Push data_lk_pmd_press_releases"
         run: |
           cd ${{ env.REPO_MAIN }}_data
           git add .
@@ -72,5 +72,5 @@ jobs:
             exit 0
           fi
           git commit -m "🤖 [pipeline.yml] $(date '+%Y-%m-%d-%H%M')"
-          git pull origin data --rebase
-          git push origin data
+          git pull origin data_lk_pmd_press_releases --rebase
+          git push origin data_lk_pmd_press_releases
