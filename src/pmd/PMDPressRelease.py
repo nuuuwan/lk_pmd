@@ -4,7 +4,7 @@ from typing import Generator
 from utils import File, Hash, Log, Parallel
 
 from scraper import AbstractDoc
-from utils_future import WWW
+from utils import WWW
 
 log = Log("PMDPressRelease")
 
